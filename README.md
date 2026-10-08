@@ -35,5 +35,7 @@ the mouse. The scoring engine was written by my team. I
 used AI tools for help while coding and studied my part to understand it.
 
 ## Screenshots
-![App](screenshots/app.png)
-![Report](screenshots/report.png)
+![App start](screenshots/1_app_start.png)
+![Tracing a letter](screenshots/2_tracing_A.png)
+![Feedback](screenshots/3_feedback_A.png)
+![Generated report](screenshots/4_report.png)
