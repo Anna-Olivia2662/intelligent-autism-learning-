@@ -231,11 +231,11 @@ class ABALiveTracer:
         self.letter_start_time: float | None = None
 
         # Video
+        # Demo videos live in a "videos" folder next to this script:
+        # videos/A.mp4, videos/B.mp4, videos/C.mp4, videos/D.mp4
+        base_dir = os.path.dirname(os.path.abspath(__file__))
         self.video_demos = {
-            "A": r"C:\Users\user\Downloads\videoplayback_XKUyRINk.mp4",
-            "B": r"C:\Users\user\Downloads\b_k4L0awY5.mp4",
-            "C": r"C:\Users\user\Downloads\how to write capital letter c - Le professeur (720p, h264).mp4",
-            "D": r"C:\Users\user\Downloads\how to write capital letter d - Le professeur (720p, h264).mp4",
+            l: os.path.join(base_dir, "videos", f"{l}.mp4") for l in "ABCD"
         }
         self.cap           = None
         self.video_running = False
